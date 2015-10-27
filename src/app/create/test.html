@@ -1,0 +1,18 @@
+<div class="row">
+<md-button type="button" ng-click="test.openBlogForm()">New Blog</md-button>
+<div ng-show="test.blogFormOpen">
+<input type="text" ng-model="blog.title" placeholder="title"></input>
+<input type="text" ng-model="blog.msg" placeholder="message"></input>
+<input type="text" ng-model="blog.author" placeholder="author"></input>
+<md-button type="button" name="button" ng-click="test.newBlog(blog)">SUBMIT</md-button>
+</div>
+</div>
+
+<div class="row">
+<md-button type="button" ng-click="test.openMsgForm()">New Discussion Post</md-button>
+<div ng-show="test.msgFormOpen">
+<input type="text" ng-model="msg.msg" placeholder="message"></input>
+<input type="text" ng-model="msg.author" placeholder="author"></input>
+<md-button type="button" name="button" ng-click="test.newMessage(form)">SUBMIT</md-button>
+</div>
+</div>

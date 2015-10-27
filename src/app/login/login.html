@@ -1,0 +1,51 @@
+<div class="logininit" style="width:100vw;">
+<div class="vertoff10"></div>
+<h1 class="login-title">plusSteam</h1>
+
+<div class="row">
+
+<div class="col s6 offset-s3">
+
+  <md-content layout-padding class="rounded10">
+
+    <div class="vertoff5"></div>
+  <div class="row">
+  <md-input-container class="col s9 offset-s1">
+    <md-icon md-svg-src="assets/icons/ic_email_24px.svg" class="email"></md-icon>
+    <input ng-model="user.email" type="email" placeholder="Email (required)" ng-required="true">
+  </md-input-container>
+</div>
+
+  <div class="row">
+  <md-input-container class="col s9 offset-s1">
+    <md-icon md-svg-src="assets/icons/password.svg"></md-icon>
+    <input ng-model="user.password" type="password" placeholder="Password (required)" >
+  </md-input-container>
+</div>
+
+  <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+
+    <md-button class="md-icon-button" aria-label="facebook" ng-click="login.fbLogin()">
+      <md-icon md-svg-icon="assets/icons/facebook.svg"></md-icon>
+    </md-button>
+
+    <md-button class="md-icon-button" aria-label="github">
+      <md-icon md-svg-icon="assets/icons/github.svg"></md-icon>
+    </md-button>
+
+    <md-button class="md-icon-button" aria-label="twitter">
+      <md-icon md-svg-icon="assets/icons/twitter.svg"></md-icon>
+    </md-button>
+
+  </section>
+
+</md-content>
+
+<md-input-container layout="row" layout-align="center center" layout-padding>
+    <md-button class="md-raised" style="background:#FFF;border-radius:5px;" ng-click="login.login(user)">Login</md-button>
+    <md-button class="md-raised" style="background:#FFF;border-radius:5px;" href="#/user/create">Signup</md-button>
+</md-input-container>
+
+</div>
+</div>
+</div>

@@ -1,0 +1,47 @@
+<div class="logininit" style="width:100vw;">
+<div class="vertoff10"></div>
+<div class="vertoff10"></div>
+
+<div class="row">
+
+<md-content layout-padding class="rounded10 col s6 offset-s3">
+
+  <div class="vertoff5"></div>
+
+  <div class="row">
+    <md-input-container class="col s5 offset-s1">
+      <md-icon md-svg-src="assets/icons/ic_email_24px.svg" class="email"></md-icon>
+      <input ng-model="user.email" type="text" placeholder="PCC userName" ng-required="true">
+    </md-input-container>
+    <div class="col s4">
+      <h4>@pcc.edu</h4>
+    </div>
+  </div>
+
+  <!-- <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+
+    <md-button class="md-icon-button" aria-label="facebook">
+      <md-icon md-svg-icon="assets/icons/facebook.svg"></md-icon>
+    </md-button>
+
+    <md-button class="md-icon-button" aria-label="github">
+      <md-icon md-svg-icon="assets/icons/github.svg"></md-icon>
+    </md-button>
+
+    <md-button class="md-icon-button" aria-label="twitter">
+      <md-icon md-svg-icon="assets/icons/twitter.svg"></md-icon>
+    </md-button>
+
+  </section> -->
+
+</md-content>
+</div>
+<div class="row">
+<md-input-container layout="row" layout-align="center center" layout-padding>
+    <md-button class="md-raised" style="background:#FFF;border-radius:5px;" ng-click="create.create(user)">Create User</md-button>
+    <md-button class="md-raised" style="background:#FFF;border-radius:5px;" href="#/login">Back to Login</md-button>
+</md-input-container>
+</div>
+
+</div>
+</div>

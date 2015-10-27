@@ -1,0 +1,13 @@
+<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+  <li ng-repeat="project in project.projects">
+  <div class="card" ng-class="project.style">
+  <img ng-src="{{project.image}}">
+  <div class="card-divider">
+    <span class="label" ng-repeat="type in project.types" style="margin-right:5px;">{{type}}</span>
+  </div>
+  <div class="card-section">
+  <h4>{{project.title}}</h4>
+  <p>{{project.description}}</p>
+  </div>
+  </div></li>
+</ul>
