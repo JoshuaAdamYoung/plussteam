@@ -1,0 +1,15 @@
+<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3" data-equaalizer>
+
+<li ng-repeat="logo in vm.logos">
+  <div class="card dark exo">
+    <img ng-src="{{logo.url}}">
+    <div class="card-divider">
+      <h4>{{logo.title}}</h4>
+    </div>
+    <div class="card-divider">
+      <span class="label secondary" ng-repeat="type in project.types" style="margin-right:5px;">{{type}}</span>
+    </div>
+  </div>
+</li>
+
+</ul>

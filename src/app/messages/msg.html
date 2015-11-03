@@ -1,20 +1,6 @@
-<md-content>
-<md-card class="blue-grey lighten-4 row message" layout-align="center center" ng-repeat="msg in msg.messages | orderBy: 'postedOn' : true | limitTo:10 | orderBy: 'postedOn'">
-
-  <md-card-content>
-    <div class="row" layout-align="start center">
-      <h6 class="md-title col">{{msg.author}}</h6><span style="font-size:.5em;" class="col">{{msg.postedOn | date:'MMM dd hh:mm'}}</h6>
+<div class="row" ng-repeat="msg in msg.messages | orderBy: 'postedOn' : true | limitTo:10 | orderBy: 'postedOn'">
+      <blockquote>{{msg.text}}<cite>{{msg.author}}</cite></blockquote>
     </div>
-    <p>{{msg.text}}</p>
-  </md-card-content>
-
-  <div class="md-actions" layout="row" layout-align="end center">
-    <md-button>Action 1</md-button>
-    <md-button>Action 2</md-button>
-  </div>
-
-</md-card>
-</md-content>
 <div class="row">
   <input ng-model="messageBox.msg" type="text" placeholder="Message" class="col s6 offset-s1">
   <md-button ng-click="msg.sendMsg(messageBox)">SEND</md-button>

@@ -30,6 +30,26 @@ class LoginController {
     });
   }
 
+  create(user){
+    let that = this;
+    const pccMail = user.email + '@pcc.edu';
+    that.$log.debug(user.email + ': formatted to: ' + pccMail);
+    this.authObj.$createUser({
+      email: pccMail,
+      password: 'preScramble'
+    })
+    .then(function(userData){
+      that.$log.debug("User: " + userData.uid + " created successfully. Check your email for your password.");
+      return that.authObj.$resetPassword({
+        email: pccMail
+      });
+    })
+    .catch(function(error){
+      that.$log.debug("Auth error: " + error);
+    });
+  }
+
+
   fbLogin(){
     let that = this;
     this.authObj.$authWithOAuthRedirect("facebook")

@@ -3,45 +3,123 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: 'app/home/home.html',
-      controller: 'HomeController',
-      controllerAs: 'home'
+      views: {
+        'sideFrame': {
+          templateUrl: 'app/components/sidebar/sidebar.html',
+          controller: 'SidebarController',
+          controllerAs: 'sidebar'
+        },
+        'mainFrame': {
+          templateUrl: 'app/project/project.html',
+          controller: 'ProjectController',
+          controllerAs: 'project'
+        }
+      }
     })
     .state('blog', {
       url: '/blog',
-      templateUrl: 'app/blog/blog.html',
-      controller: 'BlogController',
-      controllerAs: 'blog'
+      views: {
+        'sideFrame': {
+          templateUrl: 'app/components/sidebar/sidebar.html',
+          controller: 'SidebarController',
+          controllerAs: 'sidebar'
+        },
+        'mainFrame': {
+          templateUrl: 'app/blog/blog.html',
+          controller: 'BlogController',
+          controllerAs: 'blog'
+        }
+      }
     })
-    .state('project', {
-      url: '/project',
-      templateUrl: 'app/project/project.html',
-      controller: 'ProjectController',
-      controllerAs: 'project'
+    .state('playground', {
+      url: '/playground',
+      views: {
+        'sideFrame': {
+          templateUrl: 'app/components/sidebar/sidebar.html',
+          controller: 'SidebarController',
+          controllerAs: 'sidebar'
+        },
+        'mainFrame': {
+          templateUrl: 'app/playground/playground.html',
+          controller: 'PlaygroundController',
+          controllerAs: 'playground'
+        }
+      }
+    })
+    .state('newuser', {
+      url: '/create/user',
+      views: {
+        'sideFrame': {
+          templateUrl: 'app/components/sidebar/sidebar.html',
+          controller: 'SidebarController',
+          controllerAs: 'sidebar'
+        },
+        'mainFrame': {
+          templateUrl: 'app/create/user/user.html',
+          controller: 'CreateController',
+          controllerAs: 'create'
+        }
+      }
+    })
+    .state('createproject', {
+      url: '/create/project',
+      views: {
+        'sideFrame': {
+          templateUrl: 'app/components/sidebar/sidebar.html',
+          controller: 'SidebarController',
+          controllerAs: 'sidebar'
+        },
+        'mainFrame': {
+          templateUrl: 'app/create/project/project.html',
+          controller: 'CreateController',
+          controllerAs: 'create'
+        }
+      }
     })
     .state('messages', {
       url: '/messages',
-      templateUrl: 'app/messages/msg.html',
-      controller: 'MessageController',
-      controllerAs: 'msg'
+      views: {
+        'sideFrame': {
+          templateUrl: 'app/components/sidebar/sidebar.html',
+          controller: 'SidebarController',
+          controllerAs: 'sidebar'
+        },
+        'mainFrame': {
+          templateUrl: 'app/messages/msg.html',
+          controller: 'MessageController',
+          controllerAs: 'msg'
+        }
+      }
     })
     .state('test', {
-      url: '/test',
-      templateUrl: 'app/create/test.html',
-      controller: 'TestController',
-      controllerAs: 'test'
+      url: '/create/test',
+      views: {
+        'sideFrame': {
+          templateUrl: 'app/components/sidebar/sidebar.html',
+          controller: 'SidebarController',
+          controllerAs: 'sidebar'
+        },
+        'mainFrame': {
+          templateUrl: 'app/create/test/test.html',
+          controller: 'CreateController',
+          controllerAs: 'create'
+        }
+      }
     })
     .state('login', {
       url:'/login',
-      templateUrl: 'app/login/login.html',
-      controller: 'LoginController',
-      controllerAs: 'login'
-    })
-    .state('createUser', {
-      url:'/user/create',
-      templateUrl: 'app/user/create/create.html',
-      controller: 'CreateUserController',
-      controllerAs: 'create'
+      views: {
+        'sideFrame': {
+          templateUrl: 'app/components/sidebar/sidebar.html',
+          controller: 'SidebarController',
+          controllerAs: 'sidebar'
+        },
+        'mainFrame': {
+          templateUrl: 'app/login/login.html',
+          controller: 'LoginController',
+          controllerAs: 'login'
+        }
+      }
     });
 
   $urlRouterProvider.otherwise('/');

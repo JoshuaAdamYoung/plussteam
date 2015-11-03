@@ -1,0 +1,91 @@
+<div zf-modal="" id="loginModal" class="collapse large">
+  <div class="grid-block vertical exo">
+    <div class="title-bar" style="background:#fff !important">
+      <div class="left">
+        <img src="assets/images/plussteam.svg" width="60px" >
+      </div>
+      <div class="center">
+        <h1 class="exo">Login</h1>
+      </div>
+<div zf-close="" class="right">
+  <img ng-src="assets/icons/ic_close_24px.svg" width="60px">
+</div>
+</div>
+<div class="grid-content padding" style="padding-top: 1rem;">
+  <form class="grid-block center">
+    <label class="grid-block">PCC Username
+        <input type="text" ng-model="form.pccLogin" placeholder="">
+    </label>
+
+    <label class="grid-block">Password
+        <input type="password" ng-model="form.password" placeholder="">
+    </label>
+  </form>
+</div>
+<a zf-close="" ng-click="sidebar.user.login(form)" class="button">Login</a>
+<a zf-close="" class="button">Cancel</a>
+</div>
+</div>
+
+<div zf-modal="" id="createModal" class="collapse large">
+  <div class="grid-block vertical exo">
+    <div class="title-bar" style="background:#fff !important">
+      <div class="left">
+        <img src="assets/images/plussteam.svg" width="60px" >
+      </div>
+      <div class="center">
+        <h1 class="exo">Create User</h1>
+      </div>
+<div zf-close="" class="right">
+  <img ng-src="assets/icons/ic_close_24px.svg" width="60px">
+</div>
+</div>
+<div class="grid-content padding" style="padding-top: 1rem;">
+  <form class="grid-block center">
+
+    <label class="grid-block">PCC Username
+        <input type="text" ng-model="form.pccLogin" placeholder="">
+    </label>
+
+    <label class="grid-block">First Name
+        <input type="text" ng-model="form.firstName" placeholder="">
+    </label>
+
+    <label class="grid-block">Last Name
+        <input type="text" ng-model="form.lastName" placeholder="">
+    </label>
+
+    <label class="grid-block">Major
+        <input type="text" ng-model="form.major" placeholder="">
+    </label>
+
+  </form>
+</div>
+<a zf-close="" ng-click="sidebar.user.create(form)" class="button dark">Create User</a>
+<a zf-close="" class="button dark">Cancel</a>
+</div>
+</div>
+
+<ul class="vertical menu-bar exo">
+  <li ng-if="sidebar.user.userData">{{sidebar.user.userData.email}}</li>
+  <li ng-show="!sidebar.user.isLoggedIn()">
+    <div class="grid-block align-center">
+      <a class="button secondary exo" zf-open="loginModal">login</a>
+      <a class="button secondary exo" zf-open="createModal">create</a>
+    </div>
+  </li>
+  <li ng-show="sidebar.user.isLoggedIn()">
+    <div class="grid-block align-center">
+      <a class="button secondary exo" ui-sref="user">Settings</a>
+      <a class="button secondary exo" ng-click="sidebar.user.logout()">Logout</a>
+    </div>
+  </li>
+</ul>
+<img ng-src="assets/images/plussteam.svg" alt="" width="180px" style="padding-bottom:4vh;"/>
+<ul class="vertical menu-bar exo">
+  <li><a class="button secondary exo" ui-sref="home">Projects</a></li>
+  <li><a class="button secondary exo" ui-sref="blog">Blog</a></li>
+  <li ng-show="sidebar.user.isLoggedIn()"><a class="button secondary exo" ui-sref="messages">Messages</a></li>
+  <li ng-show="sidebar.user.isLoggedIn()"><a class="button secondary exo" ui-sref="test">Test</a></li>
+  <li ng-show="sidebar.user.isLoggedIn()"><a class="button secondary exo" ui-sref="playground">Playground</a></li>
+</ul>

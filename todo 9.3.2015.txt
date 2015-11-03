@@ -1,0 +1,16 @@
+Blog page
+  -style the blog page
+  -create admin page for new blogs
+
+Projects page
+  -create search function
+  -create voting function
+
+Logo design contest
+  -create main page
+  -create voting system
+  (in progress)
+
+Firepad integration
+  -create main page
+  (in progress)

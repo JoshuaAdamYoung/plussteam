@@ -1,13 +1,71 @@
-<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
-  <li ng-repeat="project in project.projects">
-  <div class="card" ng-class="project.style">
-  <img ng-src="{{project.image}}">
-  <div class="card-divider">
-    <span class="label" ng-repeat="type in project.types" style="margin-right:5px;">{{type}}</span>
-  </div>
-  <div class="card-section">
-  <h4>{{project.title}}</h4>
-  <p>{{project.description}}</p>
-  </div>
-  </div></li>
+<div zf-modal="" id="advancedModal" class="collapse large">
+  <div class="grid-block vertical exo">
+    <div class="title-bar" style="background:#fff !important">
+      <div class="left">
+        <img src="assets/images/plussteam.svg" width="60px" >
+      </div>
+      <div class="center">
+        <h1 class="exo">New Project</h1>
+      </div>
+<div zf-close="" class="right">
+  <img ng-src="assets/icons/ic_close_24px.svg" width="60px">
+</div>
+</div>
+<div class="grid-content padding" style="padding-top: 1rem;">
+  <form>
+    <label>Title
+        <input type="text" ng-model="form.title">
+    </label>
+    <label>Description
+        <textarea ng-model="form.desc"></textarea>
+    </label>
+    <label>Image url
+        <input type="text" ng-model="form.img">
+    </label>
+      <input id="checkbox1" type="checkbox" ng-model="form.type.sci"><label for="checkbox1">Science</label>
+      <input id="checkbox2" type="checkbox" ng-model="form.type.tech"><label for="checkbox2">Technology</label>
+      <input id="checkbox1" type="checkbox" ng-model="form.type.engi"><label for="checkbox1">Engineering</label>
+      <input id="checkbox2" type="checkbox" ng-model="form.type.art"><label for="checkbox2">Art</label>
+      <input id="checkbox1" type="checkbox" ng-model="form.type.math"><label for="checkbox1">Mathematics</label>
+      <input id="checkbox2" type="checkbox" ng-model="form.type.other"><label for="checkbox2">Other</label>
+  </form>
+</div>
+<a zf-close="" class="button" ng-click="project.newProject(form)">Submit Project</a>
+<a zf-close="" class="button">Cancel</a>
+</div>
+</div>
+
+<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3" data-equaalizer>
+
+  <li ng-if="project.user.isLoggedIn()">
+    <a class="button" href="#" zf-open="advancedModal" style="padding:0 !important; margin:0 !important; background:#fff !important;">
+      <div class="card success">
+        <img src="assets/images/addproject.png" alt="" />
+        <div class="card-divider">
+        </div>
+        <div class="card-section">
+          <h4>New Project</h4>
+          <p>
+            Click to start a new project!
+          </p>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li ng-repeat="project in project.projects" data-equalizer-watch>
+    <div class="card dark exo">
+      <img ng-src="{{project.image}}">
+      <div class="card-divider">
+        <h4>{{project.title}}</h4>
+      </div>
+      <div class="card-section">
+        <p>{{project.description}}</p>
+      </div>
+      <div class="card-divider">
+        <span class="label secondary" ng-repeat="type in project.types" style="margin-right:5px;">{{type}}</span>
+      </div>
+    </div>
+  </li>
+
 </ul>

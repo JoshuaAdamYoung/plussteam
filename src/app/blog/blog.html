@@ -1,10 +1,19 @@
-<div class="card blue-grey lighten-1" ng-repeat="blog in blog.blogs">
-  <div class="card-title blue-grey darken-1"><h1>{{blog.title}}</h1></div>
-  <p>{{blog.text}}</p>
-  <i>{{blog.author}} - {{blog.postedOn | date:'MMM dd hh:mm'}}</i>
-  <div class="footer">
-  <div class="comments" ng-show="showComments">
+
+<div class="grid-content">
+  <div class="grid-block">
+    <ul>
+      <li ng-repeat="blog in blog.blogs" data-equalizer-watch>
+        <div class="card dark full">
+          <img ng-src="{{blog.image}}">
+          <div class="card-divider">
+            <h4>{{blog.title}}</h4>
+            <span class="label" ng-repeat="type in blog.types" style="margin-right:5px;">{{type}}</span>
+          </div>
+          <div class="card-section">
+            <p>{{blog.text}}</p>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
-  </div>
-</div>
 </div>
