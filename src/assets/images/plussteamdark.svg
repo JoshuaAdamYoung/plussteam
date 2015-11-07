@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="482.26117"
+   height="477.02893"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="plussteam.svg"
+   inkscape:export-filename="/home/wompt/code/maker/src/assets/images/plussteamblack.png"
+   inkscape:export-xdpi="73.234131"
+   inkscape:export-ydpi="73.234131">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.69999999"
+     inkscape:cx="-66.793705"
+     inkscape:cy="205.05358"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     inkscape:window-width="1354"
+     inkscape:window-height="683"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer">
+    <rect
+       style="opacity:1;fill:#232323;fill-opacity:1;stroke:#560000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3007"
+       width="482.22"
+       height="487"
+       x="2.5"
+       y="-12.471069"
+       rx="18.577896"
+       ry="1.4167155" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-129.33,-196.93628)">
+    <path
+       transform="matrix(-0.99821785,0.05967524,-0.05967524,-0.99821785,550.55585,840.18793)"
+       style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:transform-center-x="-20.022656"
+       inkscape:transform-center-y="43.203569"
+       d="M 251.42856,469.50503 142.55679,632.81267 55.564117,456.87314 -31.428563,280.9336 164.43588,293.5655 360.30033,306.1974 z"
+       id="path2987"
+       inkscape:export-filename="/home/wompt/steam.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g3770" />
+    <g
+       id="g3810"
+       transform="matrix(0.52439087,0,0,0.52439087,230.56903,53.732891)"
+       inkscape:export-filename="/home/wompt/steam.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:20;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+         d="m 186.375,640.3125 c -53.66205,0 -97.375,43.71295 -97.375,97.375 0,46.1603 32.34543,84.95876 75.54531,94.9044 l -1.48725,-20.32897 C 128.96555,799.54425 109,767.97213 109,737.6875 c 0,-42.85325 34.52175,-77.375 77.375,-77.375"
+         id="path3804"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csccsc" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:20;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+         d="m 327.79636,660.3125 c 42.85324,0 77.375,34.52175 77.375,77.375 0,26.44697 -9.56147,54.45743 -44.00459,69.08267 l -1.08083,22.78254 c 37.85761,-13.35934 65.08542,-49.51374 65.08542,-91.86521 0,-53.66205 -43.71296,-97.375 -97.375,-97.375"
+         id="path3806"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csccsc" />
+      <path
+         d="m 273.75134,737.69965 c 0,48.25764 -39.12056,87.37819 -87.3782,87.37819 -48.25765,0 -87.378198,-39.12055 -87.378198,-87.37819 0,-48.25765 39.120548,-87.3782 87.378198,-87.3782 48.25764,0 87.3782,39.12055 87.3782,87.3782 z"
+         sodipodi:ry="87.378197"
+         sodipodi:rx="87.378197"
+         sodipodi:cy="737.69965"
+         sodipodi:cx="186.37314"
+         id="path3808"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:20;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc"
+         transform="translate(73.741139,-68.690373)" />
+    </g>
+    <g
+       id="g3815"
+       transform="matrix(0.48276129,0,0,0.48276129,242.07847,82.471534)"
+       style="fill:#232323;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/wompt/steam.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:type="arc"
+         style="fill:#232323;fill-opacity:1;stroke:none"
+         id="path3817"
+         sodipodi:cx="186.37314"
+         sodipodi:cy="737.69965"
+         sodipodi:rx="87.378197"
+         sodipodi:ry="87.378197"
+         d="m 273.75134,737.69965 c 0,48.25764 -39.12056,87.37819 -87.3782,87.37819 -48.25765,0 -87.378198,-39.12055 -87.378198,-87.37819 0,-48.25765 39.120548,-87.3782 87.378198,-87.3782 48.25764,0 87.3782,39.12055 87.3782,87.3782 z" />
+      <path
+         d="m 273.75134,737.69965 c 0,48.25764 -39.12056,87.37819 -87.3782,87.37819 -48.25765,0 -87.378198,-39.12055 -87.378198,-87.37819 0,-48.25765 39.120548,-87.3782 87.378198,-87.3782 48.25764,0 87.3782,39.12055 87.3782,87.3782 z"
+         sodipodi:ry="87.378197"
+         sodipodi:rx="87.378197"
+         sodipodi:cy="737.69965"
+         sodipodi:cx="186.37314"
+         id="path3819"
+         style="fill:#232323;fill-opacity:1;stroke:none"
+         sodipodi:type="arc"
+         transform="translate(141.42136,0)" />
+      <path
+         transform="translate(73.741139,-68.690373)"
+         sodipodi:type="arc"
+         style="fill:#232323;fill-opacity:1;stroke:none"
+         id="path3821"
+         sodipodi:cx="186.37314"
+         sodipodi:cy="737.69965"
+         sodipodi:rx="87.378197"
+         sodipodi:ry="87.378197"
+         d="m 273.75134,737.69965 c 0,48.25764 -39.12056,87.37819 -87.3782,87.37819 -48.25765,0 -87.378198,-39.12055 -87.378198,-87.37819 0,-48.25765 39.120548,-87.3782 87.378198,-87.3782 48.25764,0 87.3782,39.12055 87.3782,87.3782 z" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="157.1131"
+       y="672.43396"
+       id="text3839"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/wompt/steam.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan3841"
+         x="157.1131"
+         y="672.43396"
+         style="font-size:112px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Maya;-inkscape-font-specification:Maya">+STEAM</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path3760"
+       d="m 383.31837,524.72772 20.23276,-49.43315"
+       style="fill:none;stroke:#000000;stroke-width:8.60300255;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/home/wompt/steam.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:8.60300255;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 351.40827,524.72772 331.17551,475.29457"
+       id="path3845"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/wompt/steam.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3847"
+       d="m 367.25618,521.28831 -0.0593,-53.41347"
+       style="fill:none;stroke:#000000;stroke-width:8.60300255;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/home/wompt/steam.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>

@@ -31,6 +31,21 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
         }
       }
     })
+    .state('logo', {
+      url: '/logo',
+      views: {
+        'sideFrame': {
+          templateUrl: 'app/components/sidebar/sidebar.html',
+          controller: 'SidebarController',
+          controllerAs: 'sidebar'
+        },
+        'mainFrame': {
+          templateUrl: 'app/logo/logo.html',
+          controller: 'LogoController',
+          controllerAs: 'logo'
+        }
+      }
+    })
     .state('playground', {
       url: '/playground',
       views: {
@@ -46,8 +61,8 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
         }
       }
     })
-    .state('newuser', {
-      url: '/create/user',
+    .state('settings', {
+      url: '/user/settings',
       views: {
         'sideFrame': {
           templateUrl: 'app/components/sidebar/sidebar.html',
@@ -55,9 +70,24 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
           controllerAs: 'sidebar'
         },
         'mainFrame': {
-          templateUrl: 'app/create/user/user.html',
-          controller: 'CreateController',
-          controllerAs: 'create'
+          templateUrl: 'app/user/user.html',
+          controller: 'UserSettingsController',
+          controllerAs: 'user'
+        }
+      }
+    })
+    .state('members', {
+      url: '/members',
+      views: {
+        'sideFrame': {
+          templateUrl: 'app/components/sidebar/sidebar.html',
+          controller: 'SidebarController',
+          controllerAs: 'sidebar'
+        },
+        'mainFrame': {
+          templateUrl: 'app/members/members.html',
+          controller: 'MembersController',
+          controllerAs: 'vm'
         }
       }
     })

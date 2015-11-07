@@ -22,8 +22,10 @@ class UserService {
         that.loggedIn = true;
         that.userRef = that.usersRef.child(authData.uid);
         that.userData = that.$firebaseObject(that.userRef);
-        if(!that.userData.email){
+        that.$log.debug(that.userData);
+        if(that.userData.email === null){
           that.userRef.set({email:authData.password.email});
+          that.$log.debug('email added to database')
         }
         that.$log.debug('Logged in as: ' + authData.password.email);
       } else {
@@ -68,7 +70,9 @@ class UserService {
     });
   }
 
-
+  getData(){
+    return this.userData;
+  }
 
   isLoggedIn(){
     return this.loggedIn;

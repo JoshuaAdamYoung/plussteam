@@ -66,7 +66,8 @@
 </div>
 </div>
 
-<ul class="vertical menu-bar exo">
+<ul class="menu-bar exo">
+  <img ng-src="assets/images/plussteam.svg" alt="" width="180px" style="padding-bottom:4vh;"/>
   <li ng-if="sidebar.user.userData">{{sidebar.user.userData.email}}</li>
   <li ng-show="!sidebar.user.isLoggedIn()">
     <div class="grid-block align-center">
@@ -76,13 +77,13 @@
   </li>
   <li ng-show="sidebar.user.isLoggedIn()">
     <div class="grid-block align-center">
-      <a class="button secondary exo" ui-sref="user">Settings</a>
+      <a class="button secondary exo" ui-sref="settings">Settings</a>
       <a class="button secondary exo" ng-click="sidebar.user.logout()">Logout</a>
     </div>
   </li>
 </ul>
-<img ng-src="assets/images/plussteam.svg" alt="" width="180px" style="padding-bottom:4vh;"/>
-<ul class="vertical menu-bar exo">
+
+<ul class="menu-bar exo">
   <li><a class="button secondary exo" ui-sref="home">Projects</a></li>
   <li><a class="button secondary exo" ui-sref="blog">Blog</a></li>
   <li ng-show="sidebar.user.isLoggedIn()"><a class="button secondary exo" ui-sref="messages">Messages</a></li>

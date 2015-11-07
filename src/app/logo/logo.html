@@ -1,3 +1,13 @@
+<div flow-init="{target: '/upload'}"
+     flow-files-submitted="$flow.upload()"
+     flow-file-success="$file.msg = $message">
+  <input type="file" flow-btn />
+  <tr ng-repeat="file in $flow.files">
+    <td>{{$index+1}}</td>
+    <td>{{file.name}}</td>
+  </tr>
+  <span flow-btn>Upload File</span>
+</div>
 <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3" data-equaalizer>
 
 <li ng-repeat="logo in vm.logos">

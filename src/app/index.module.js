@@ -8,9 +8,12 @@ import HomeController from './home/home.ctrl';
 import BlogController from './blog/blog.ctrl';
 import ProjectController from './project/project.ctrl';
 import PlaygroundController from './playground/playground.ctrl';
+import UserSettingsController from './user/user.ctrl';
 import CreateController from './create/create.ctrl';
 import MessageController from './messages/msg.ctrl';
+import MembersController from './members/members.ctrl';
 import LoginController from './login/login.ctrl';
+import LogoController from './logo/logo.ctrl';
 import SidebarController from '../app/components/sidebar/sidebar.ctrl';
 import UserService from '../app/components/user.svc.js';
 import ConfigService from '../app/components/main.config';
@@ -30,8 +33,11 @@ angular.module('maker', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ui.
   .controller('BlogController', BlogController)
   .controller('ProjectController', ProjectController)
   .controller('PlaygroundController', PlaygroundController)
+  .controller('UserSettingsController', UserSettingsController)
   .controller('CreateController', CreateController)
   .controller('SidebarController', SidebarController)
+  .controller('MembersController', MembersController)
   .controller('MessageController', MessageController)
   .controller('HomeController', HomeController)
+  .controller('LogoController', LogoController)
   .controller('LoginController', LoginController);

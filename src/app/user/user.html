@@ -1,0 +1,83 @@
+<div class="grid-block vertical align-center">
+<h1 class="exo">Preferences - {{user.data.email}}</h1>
+<form class="exo">
+  <div class="row">
+    <div class="large-4 columns">
+      <label>First Name
+        <input type="text" placeholder="{{user.data.firstName}}" ng-model="form.firstName" />
+      </label>
+    </div>
+    <div class="large-4 columns">
+      <label>Last Name
+        <input type="text" placeholder="{{user.data.lastName}}" ng-model="form.lastName" />
+      </label>
+    </div>
+    <div class="large-4 columns">
+      <label>Major
+        <input type="text" placeholder="{{user.data.major}}" ng-model="form.major" />
+      </label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 columns">
+      <label>Phone Number
+        <input type="text" placeholder="{{user.data.phone}}" ng-model="form.phone" />
+      </label>
+    </div>
+    <div class="large-4 columns">
+      <label>Alt email
+        <input type="email" placeholder="{{user.data.altEmail}}" ng-model="form.altEmail" />
+      </label>
+    </div>
+    <div class="large-4 columns">
+      <label>Profile Image Url
+        <input type="text" placeholder="{{user.data.profilePic}}" ng-model="form.profilePic" />
+      </label>
+    </div>
+  </div>
+<!--
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Select Box
+        <select>
+          <option value="husker">Husker</option>
+          <option value="starbuck">Starbuck</option>
+          <option value="hotdog">Hot Dog</option>
+          <option value="apollo">Apollo</option>
+        </select>
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-6 columns">
+      <label>Choose Your Favorite</label>
+      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
+      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+    </div>
+    <div class="large-6 columns">
+      <label>Check these out</label>
+      <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+      <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Textarea Label
+        <textarea placeholder="small-12.columns"></textarea>
+      </label>
+    </div>
+  </div>
+-->
+<div class="grid-block">
+  <a ng-click="user.saveSettings(form)" class="button radius grid-block dark exo">Save Settings</a>
+  <a ui-sref="home" class="button radius grid-block dark exo">Cancel</a>
+</div>
+</form>
+
+</div>
+
+<ul>
+  <li ng-repeat="user in user.users">
+  <img ng-src="{{user.image}}" alt="" /></li>
+</ul>

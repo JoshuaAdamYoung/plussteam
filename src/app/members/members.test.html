@@ -1,0 +1,52 @@
+<div zf-modal="" id="advancedModal" class="collapse large">
+  <div class="grid-block vertical exo">
+    <div class="title-bar" style="background:#fff !important">
+      <div class="left">
+        <img src="assets/images/plussteam.svg" width="60px" >
+      </div>
+      <div class="center">
+        <h1 class="exo">New Message</h1>
+      </div>
+<div zf-close="" class="right">
+  <img ng-src="assets/icons/ic_close_24px.svg" width="60px">
+</div>
+</div>
+<div class="grid-content padding" style="padding-top: 1rem;">
+  <form>
+    <label>Subject
+        <input type="text" ng-model="form.sub">
+    </label>
+    <label>Message
+        <textarea ng-model="form.msg"></textarea>
+    </label>
+  </form>
+</div>
+<a zf-close="" class="button" ng-click="project.newProject(form)">Submit Project</a>
+<a zf-close="" class="button">Cancel</a>
+</div>
+</div>
+
+<li ng-repeat="(key, member) in vm.members" data-equalizer-watch>
+  <div class="card dark exo">
+    <img ng-src="{{member.image}}">
+    <div class="card-divider">
+      <h4>{{member.firstName}} {{member.lastName}}</h4>
+    </div>
+    <div class="card-divider">
+      <span class="label secondary" style="margin-right:5px;">{{member.major}}</span>
+    </div>
+    <div class="card-divider">
+      <div class="row">
+        <span ng-click="messageBox = !messageBox">MessageIcon</span>
+      </div>
+      <div class="row" ng-show="messageBox">
+        <div class="small-8 columns">
+          <input type="text" ng-model="message.txt">
+        </div>
+        <div class="small-4 columns">
+            <a ng-click="vm.messageMember(message, key)" class="button radius grid-block dark exo">Message User</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
