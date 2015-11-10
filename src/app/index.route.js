@@ -151,7 +151,7 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
         }
       }
     })
-    .state('project.detail', {
+    .state('projdetail', {
       url:'/project/:id',
       views: {
         'sideFrame': {
