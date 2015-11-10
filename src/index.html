@@ -24,24 +24,17 @@
     <link href='https://fonts.googleapis.com/css?family=Exo:200' rel='stylesheet' type='text/css'>
 
   </head>
-  <body class="vertical grid-frame">
+  <body class="grid-frame">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
       <div class="vertical grid-block">
-
-        <div class="grid-block">
-          <div ui-view="sideFrame"></div>
+        <div ui-view="sideFrame"></div>
+        <div class="grid-block" id="thegoods">
+          <div ui-view="mainFrame"></div>
         </div>
-
-
-
-        <div class="grid-block">
-            <div ui-view="mainFrame"></div>
-        </div>
-
       </div>
+
 
 
     <!-- build:js(src) scripts/vendor.js -->

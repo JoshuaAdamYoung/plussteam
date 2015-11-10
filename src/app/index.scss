@@ -2,7 +2,6 @@
  *  If you want to override some foundation settings, you have to change values here.
  *  The list of settings values are listed here bower_components/foundation/scss/foundation/_settings.scss
  */
-$topbar-bg-color: #5AADBB;
 
 /**
  *  The import of foundation is made manually because there is still no links of the
@@ -16,15 +15,13 @@ $topbar-bg-color: #5AADBB;
  */
 // bower:scss
 // endbower
+
 .drk-btn {
     background: #232323 !important;
     color:#fff;
     font-family: 'Exo', sans-serif;
 }
-.top-bar {
-  background-color: #232323;
-  color:#fff;
-}
+
 
 .firepad {
   width: 700px;
@@ -61,6 +58,55 @@ $topbar-bg-color: #5AADBB;
   img.right {
     width: 50px;
   }
+}
+
+.addprojecttitle {
+  background: #1d7b3f;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.addproject {
+  background: #3d9b5f url('../assets/images/addproject.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0px 0px 15px 15px;
+}
+
+#thegoods {
+  background-color: #232323;
+}
+
+.blogimage {
+
+}
+
+.blogtitle {
+  color: #000;
+  background: #606060;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.blogdesc {
+  color: #000;
+  background: #d0d0d0;
+}
+
+.rounded {
+  border-radius: 15px 15px 15px 15px;
+}
+
+.whiteback {
+  background: #fff;
+  box-shadow: 5px 5px 10px #000;
+}
+
+.blogtypes {
+
+}
+
+.topmargin {
+  height: 1em;
 }
 
 /**

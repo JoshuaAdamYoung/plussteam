@@ -1,19 +1,20 @@
-
-<div class="grid-content">
-  <div class="grid-block">
-    <ul>
-      <li ng-repeat="blog in blog.blogs" data-equalizer-watch>
-        <div class="card dark full">
+<div class="row">
+  <ul>
+    <li ng-repeat="blog in blog.blogs">
+      <div class="vertical grid-block small-12 columns">
+        <div class="grid-block blogimage">
           <img ng-src="{{blog.image}}">
-          <div class="card-divider">
-            <h4>{{blog.title}}</h4>
-            <span class="label" ng-repeat="type in blog.types" style="margin-right:5px;">{{type}}</span>
-          </div>
-          <div class="card-section">
-            <p>{{blog.text}}</p>
-          </div>
         </div>
-      </li>
-    </ul>
-  </div>
+        <div class="grid-block blogtitle">
+          <h4>{{blog.title}}</h4>
+        </div>
+        <div class="grid-block blogdesc">
+          <p>{{blog.text}}</p>
+        </div>
+        <div class="grid-block blogtypes">
+          <span class="label" ng-repeat="type in blog.types" style="margin-right:5px;">{{type}}</span>
+        </div>
+      </div>
+    </li>
+  </ul>
 </div>

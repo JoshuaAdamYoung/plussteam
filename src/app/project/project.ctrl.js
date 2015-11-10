@@ -1,9 +1,9 @@
 class ProjectController {
-  constructor (Firebase, MockProjects, UserService, $firebaseArray) {
+  constructor (Firebase, MockProjects, UserService, $firebaseObject) {
     'ngInject';
     this.ref = new Firebase('https://plussteam.firebaseio.com');
     this.projectRef = this.ref.child('projects');
-    this.projects = $firebaseArray(this.projectRef);
+    this.projects = $firebaseObject(this.projectRef);
     this.user = UserService;
   }
 

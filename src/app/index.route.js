@@ -150,6 +150,21 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
           controllerAs: 'login'
         }
       }
+    })
+    .state('project.detail', {
+      url:'/project/:id',
+      views: {
+        'sideFrame': {
+          templateUrl: 'app/components/sidebar/sidebar.html',
+          controller: 'SidebarController',
+          controllerAs: 'sidebar'
+        },
+        'mainFrame': {
+          templateUrl: 'app/viewproject/proj.view.html',
+          controller: 'ProjectViewController',
+          controllerAs: 'project'
+        }
+      }
     });
 
   $urlRouterProvider.otherwise('/');

@@ -7,6 +7,7 @@ import routerConfig from './index.route';
 import HomeController from './home/home.ctrl';
 import BlogController from './blog/blog.ctrl';
 import ProjectController from './project/project.ctrl';
+import ProjectViewController from './viewproject/proj.view.ctrl';
 import PlaygroundController from './playground/playground.ctrl';
 import UserSettingsController from './user/user.ctrl';
 import CreateController from './create/create.ctrl';
@@ -32,6 +33,7 @@ angular.module('maker', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ui.
   .service('MockProjects', MockProjects)
   .controller('BlogController', BlogController)
   .controller('ProjectController', ProjectController)
+  .controller('ProjectViewController', ProjectViewController)
   .controller('PlaygroundController', PlaygroundController)
   .controller('UserSettingsController', UserSettingsController)
   .controller('CreateController', CreateController)

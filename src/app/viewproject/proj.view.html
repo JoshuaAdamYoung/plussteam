@@ -1,0 +1,23 @@
+<div class="rounded whiteback">
+
+<div class="row exo blogtitle">
+  <h4>{{project.data.title}}</h4>
+</div>
+<div class="row">
+  <div class="small-4 columns">
+    <div class="shrink left">
+      <img ng-src="{{project.data.image}}">
+    </div>
+  </div>
+  <div class="small-8 columns">
+  <div style="color:#000;">
+    <p>{{project.data.description}}</p>
+  </div>
+  </div>
+</div>
+<div class="row">
+  <span class="label dark" ng-repeat="type in project.data.types" style="margin:10px;">{{type}}</span>
+</div>
+</div>
+
+</div>
